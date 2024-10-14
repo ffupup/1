@@ -1,0 +1,137 @@
+/* CSS for the template styles can go here */
+/* This is the template for the body of the page, this also has an effect on the spacing and could leave white areas
+around the header if it is not used, just from some testing */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(248, 234, 234);
+    /* I cannot find another way to remove the missing areas around the
+    top and bottom of the header if I do not include this */
+}
+/* Styles for the body, header, and footer can go in here */
+/* Header style */
+header {
+    background-color: aqua;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+    font-size: large;
+}
+/* Now we want to setup a navigation bar. This will start off very basic and simple, but the end goal is to have this
+integrated into the header and to have this section link to the login, signup, home, and review pages, although the
+review page may be integrated into the footer or the bottom of the page */
+nav {
+    background-color: aquamarine;
+    color: red;
+    padding: 15px;
+    display: flex; /* use a flexbox to allow items to be on both the left and the right... */
+    justify-content: space-between; /* align with a space between */
+}
+/* need a second nav component */
+nav a {
+    color: purple;
+    padding: 0 10px;
+}
+/* Now we will add a template for the FOOTER */
+footer {
+    background-color: yellow;
+    color: orange;
+    padding: 10px; /* Tried experimenting with 20 pixels, but for the small amount of content
+    inside it felt better to use 10px */
+    position:relative; /* will not change position */
+    bottom: 0; /* at the bottom of the page */
+    width: 100%;
+}
+/* The home button will need to be called here first so that it won't change the rounded features of the login and register buttons */
+.home {
+    padding: 10px 15px; /* Make the boxes rectangular */
+    text-decoration: none;
+    background-color: olive; /* Picked this by scrolling through suggested colors on visual studio and it looks good */
+    color: white; /* Text color (white looks best) */
+    border: 2px solid black;
+}
+/* testing CSS to make the login + signup buttons */
+.login, .signup {
+    padding: 10px 15px; /* Make the boxes rectangular */
+    text-decoration: none; /* Remove the hyperlink underlining that is still present on the home button/link */
+    border: 1.5px solid black; /* add a 1.5 px wide solid black outline to the box to make it pop */
+    border-radius: 10px; /* Round off the corners, tried with 5 and 15 but 10 looks best */
+    /* adjust font size and other parameters if needed */
+    font-size: 15px; /* 15 is a good size and translates well to different window sizes */
+
+}
+.login {
+    right: 115px; /* Adjusted right position for login button */
+    background-color: rgb(33, 192, 33); /* Picked this color by hand using visual studio code */
+    color: white; /* Text color (white looks best) */
+}
+.signup {
+    right: 20px; /* Leaves a small gap between the login button */
+    background-color: dodgerblue; /* Picked this by scrolling through suggested colors on visual studio and it looks good */
+    color: white; /* Text color (white looks best) */
+}
+
+/* More needs to be added to this */
+
+/* SETUP FOR THE TABLE TO INPUT DATA FOR A MENU ITEM */
+.menu-box{
+    max-width:500px; /* stop it from crossing the whole screen */
+    margin: 100px auto; /* ensure it does not touch the top bar and the navbar */
+    padding:15px; /* padding for the loginbox */
+    border-radius: 15px; /* radius of black border (color selected below) */
+    border-color: solid black;
+    background-color: white; /* white background on the box */
+    /* This can be changed later */
+
+}
+
+/* Additional requirements for the registration box */
+.menu-box h2{
+    margin-bottom: 25px; /* margin from the bottom of the box */
+    text-align: center; /* center the word on the box */
+    color:black; /* text colour of the word Register*/
+
+}
+
+/* Login box form */
+.menu-box form{
+    text-align: center; /* centre the text */
+}
+
+/* labels for the login box */
+.menu-box form label{
+    display: block;
+    margin-bottom: -15px; /* make the text closer to the boxes */
+    color:darkslategray; /* colour of the words username and password + confirm password */
+
+}
+
+.menu-box form input[type="item_name"],
+.menu-box form input[type="item_category"],
+.menu-box form input[type="item_price"] {
+    width: 100%; /* use the full width */
+    box-sizing: border-box;
+    padding: 10px; /* choose the height of the text boxes */
+    border: 1.5px solid rgb(73, 71, 71); /* add a darker border */
+    border-radius: 5px; /* nice round edges */
+    margin-bottom: 20px;
+
+}
+
+.menu-box form input[type="create_item"]{
+    width:50%; /* make this half the width of the boxes above it */
+    padding:10px; /* match the other box */
+    background-color: dodgerblue; /* match the same colour as the register button! */
+    color: white; /* Same as the register again */
+    border: 1.5px solid black; /* keep consistent */
+    border-radius: 5px; /* match the other box - having trouble making this box taller 
+    without making it too big and not sit centred on the register form */
+    text-align: center;
+    /* can add a radius if it appears too sharp */
+    
+}
+
+
+/*  */

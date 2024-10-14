@@ -1,0 +1,47 @@
+CRITICAL - 2024-04-25 02:10:48 --> ParseError: Unterminated comment starting line 12
+[Method: GET, Route: login]
+in APPPATH\Config\Routes.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-25 02:10:48 --> ParseError: Unterminated comment starting line 12
+[Method: GET, Route: /]
+in APPPATH\Config\Routes.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-25 03:50:50 --> Error: Class "App\Controllers\UserModel" not found
+[Method: POST, Route: register]
+in APPPATH\Controllers\Home.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-25 03:53:41 --> ErrorException: Trait "App\Controllers\App\Models\UserModel" not found
+[Method: GET, Route: signup]
+in APPPATH\Controllers\Home.php on line 5.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-04-25 03:56:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "registration_form.php"
+[Method: POST, Route: register]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('registration_form.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('registration_form', [], true)
+ 3 APPPATH\Controllers\Home.php(66): view('registration_form')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->register()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')

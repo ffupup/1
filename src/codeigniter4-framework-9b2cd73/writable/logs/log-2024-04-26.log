@@ -1,0 +1,339 @@
+ERROR - 2024-04-26 00:10:53 --> mysqli_sql_exception: Table 'users' already exists in C:\Users\cjkir\OneDrive\Desktop\Fan 2024\codeigniter4-framework-9b2cd73\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\Users\cjkir\OneDrive\Desktop\Fan 2024\codeigniter4-framework-9b2cd73\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\Users\cjkir\OneDrive\Desktop\Fan 2024\codeigniter4-framework-9b2cd73\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\Users\cjkir\OneDrive\Desktop\Fan 2024\codeigniter4-framework-9b2cd73\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\Users\cjkir\OneDrive\Desktop\Fan 2024\codeigniter4-framework-9b2cd73\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\Users\cjkir\OneDrive\Desktop\Fan 2024\codeigniter4-framework-9b2cd73\app\Database\Migrations\2024-04-26-000119_CreateUsersTable.php(33): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\Users\cjkir\OneDrive\Desktop\Fan 2024\codeigniter4-framework-9b2cd73\system\Database\MigrationRunner.php(867): App\Database\Migrations\CreateUsersTable->up()
+#6 C:\Users\cjkir\OneDrive\Desktop\Fan 2024\codeigniter4-framework-9b2cd73\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\cjkir\OneDrive\Desktop\Fan 2024\codeigniter4-framework-9b2cd73\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\cjkir\OneDrive\Desktop\Fan 2024\codeigniter4-framework-9b2cd73\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\cjkir\OneDrive\Desktop\Fan 2024\codeigniter4-framework-9b2cd73\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\cjkir\OneDrive\Desktop\Fan 2024\codeigniter4-framework-9b2cd73\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\Users\cjkir\OneDrive\Desktop\Fan 2024\codeigniter4-framework-9b2cd73\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\Users\cjkir\OneDrive\Desktop\Fan 2024\codeigniter4-framework-9b2cd73\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-04-26 00:20:17 --> Error: Class "App\Controllers\Users" not found
+[Method: POST, Route: register]
+in APPPATH\Controllers\Home.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-26 00:32:47 --> Error: Undefined constant "App\Controllers\usersModel"
+[Method: POST, Route: register]
+in APPPATH\Controllers\Users.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-26 00:33:32 --> Error: Undefined constant "App\Controllers\users"
+[Method: POST, Route: register]
+in APPPATH\Controllers\Users.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-26 00:38:25 --> Error: Class "App\Controllers\Users" not found
+[Method: POST, Route: register]
+in APPPATH\Controllers\UserController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-26 00:39:11 --> Error: Undefined constant "App\Controllers\users"
+[Method: POST, Route: register]
+in APPPATH\Controllers\UserController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+INFO - 2024-04-26 01:15:07 --> Register method called
+CRITICAL - 2024-04-26 02:24:05 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\UserModel"
+[Method: POST, Route: register]
+in SYSTEMPATH\Model.php on line 813.
+ 1 SYSTEMPATH\Model.php(813): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\UserModel')
+ 2 SYSTEMPATH\BaseModel.php(821): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\UserController.php(21): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-26 02:25:14 --> ErrorException: Undefined variable $users
+[Method: POST, Route: register]
+in APPPATH\Views\register.php on line 18.
+ 1 APPPATH\Views\register.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\app\\Views\\register.php', 18)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\app\\Views\\register.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('register', [], true)
+ 5 APPPATH\Controllers\UserController.php(57): view('register')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-26 02:26:59 --> ErrorException: Undefined variable $users
+[Method: POST, Route: register]
+in APPPATH\Views\register.php on line 18.
+ 1 APPPATH\Views\register.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\app\\Views\\register.php', 18)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\app\\Views\\register.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('register', [], true)
+ 5 APPPATH\Controllers\UserController.php(57): view('register')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-26 02:27:06 --> ErrorException: Undefined variable $users
+[Method: POST, Route: register]
+in APPPATH\Views\register.php on line 18.
+ 1 APPPATH\Views\register.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\app\\Views\\register.php', 18)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\app\\Views\\register.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('register', [], true)
+ 5 APPPATH\Controllers\UserController.php(57): view('register')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-26 02:29:23 --> TypeError: CodeIgniter\Router\RouteCollection::post(): Argument #3 ($options) must be of type ?array, string given, called in C:\Users\cjkir\OneDrive\Desktop\Fan 2024\codeigniter4-framework-9b2cd73\app\Config\Routes.php on line 14
+[Method: POST, Route: register]
+in SYSTEMPATH\Router\RouteCollection.php on line 1063.
+ 1 APPPATH\Config\Routes.php(14): CodeIgniter\Router\RouteCollection->post('/register', 'UserController::register', 'UserController::index')
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-26 02:32:49 --> ErrorException: Undefined variable $users
+[Method: POST, Route: register]
+in APPPATH\Views\register.php on line 18.
+ 1 APPPATH\Views\register.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\app\\Views\\register.php', 18)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\app\\Views\\register.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('register', [], true)
+ 5 APPPATH\Controllers\UserController.php(57): view('register')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-26 02:56:07 --> ParseError: syntax error, unexpected double-quoted string ">"
+[Method: GET, Route: signup]
+in APPPATH\Views\signup.php on line 9.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('signup', [], true)
+ 3 APPPATH\Controllers\Home.php(22): view('signup')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->signup()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-26 02:56:38 --> ParseError: syntax error, unexpected token "<"
+[Method: GET, Route: signup]
+in APPPATH\Views\signup.php on line 9.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('signup', [], true)
+ 3 APPPATH\Controllers\Home.php(22): view('signup')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->signup()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-26 03:00:00 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: signup]
+in APPPATH\Views\signup.php on line 8.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('signup', [], true)
+ 3 APPPATH\Controllers\Home.php(22): view('signup')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->signup()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-26 03:02:26 --> ErrorException: Undefined variable $user
+[Method: GET, Route: signup]
+in APPPATH\Views\signup.php on line 8.
+ 1 APPPATH\Views\signup.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\app\\Views\\signup.php', 8)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\app\\Views\\signup.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('signup', [], true)
+ 5 APPPATH\Controllers\Home.php(22): view('signup')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->signup()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-26 03:02:58 --> ErrorException: Undefined variable $users
+[Method: GET, Route: signup]
+in APPPATH\Views\signup.php on line 8.
+ 1 APPPATH\Views\signup.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\app\\Views\\signup.php', 8)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\app\\Views\\signup.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('signup', [], true)
+ 5 APPPATH\Controllers\Home.php(22): view('signup')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->signup()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-26 03:14:11 --> ErrorException: Undefined variable $users
+[Method: GET, Route: signup]
+in APPPATH\Views\signup.php on line 8.
+ 1 APPPATH\Views\signup.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\app\\Views\\signup.php', 8)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\app\\Views\\signup.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('signup', [], true)
+ 5 APPPATH\Controllers\Home.php(22): view('signup')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->signup()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-26 03:16:17 --> ErrorException: Undefined property: App\Controllers\UserController::$db
+[Method: POST, Route: register]
+in APPPATH\Controllers\UserController.php on line 26.
+ 1 APPPATH\Controllers\UserController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\UserController::$db', 'C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\app\\Controllers\\UserController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-26 03:19:01 --> ErrorException: Undefined property: App\Controllers\UserController::$db
+[Method: POST, Route: register]
+in APPPATH\Controllers\UserController.php on line 26.
+ 1 APPPATH\Controllers\UserController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\UserController::$db', 'C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\app\\Controllers\\UserController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-26 03:19:05 --> ErrorException: Undefined property: App\Controllers\UserController::$db
+[Method: POST, Route: register]
+in APPPATH\Controllers\UserController.php on line 26.
+ 1 APPPATH\Controllers\UserController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\UserController::$db', 'C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\app\\Controllers\\UserController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-26 03:19:26 --> Error: Call to undefined method App\Controllers\UserController::insert()
+[Method: POST, Route: register]
+in APPPATH\Controllers\UserController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-26 03:21:42 --> ErrorException: Undefined property: App\Controllers\UserController::$db
+[Method: POST, Route: register]
+in APPPATH\Controllers\UserController.php on line 28.
+ 1 APPPATH\Controllers\UserController.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\UserController::$db', 'C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\app\\Controllers\\UserController.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-26 03:22:59 --> Error: Call to undefined method App\Controllers\UserController::insert()
+[Method: POST, Route: register]
+in APPPATH\Controllers\UserController.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+INFO - 2024-04-26 03:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:10:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:10:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:12:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:14:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:14:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:14:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 04:17:56 --> ErrorException: Undefined variable $username
+[Method: POST, Route: register]
+in APPPATH\Controllers\UserController.php on line 32.
+ 1 APPPATH\Controllers\UserController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $username', 'C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\app\\Controllers\\UserController.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+INFO - 2024-04-26 04:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:18:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:18:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:29:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:29:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

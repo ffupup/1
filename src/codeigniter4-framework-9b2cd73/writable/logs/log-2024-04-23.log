@@ -1,0 +1,100 @@
+CRITICAL - 2024-04-23 06:04:03 --> ErrorException: Undefined property: CodeIgniter\View\View::$endSection
+[Method: GET, Route: signup]
+in APPPATH\Views\signup.php on line 30.
+ 1 APPPATH\Views\signup.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$endSection', 'C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\app\\Views\\signup.php', 30)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\app\\Views\\signup.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('signup', [], true)
+ 5 APPPATH\Controllers\Home.php(22): view('signup')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->signup()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-23 06:04:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "base_template.php"
+[Method: GET, Route: signup]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('base_template.php')
+ 2 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('base_template', [], true)
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('signup', [], true)
+ 4 APPPATH\Controllers\Home.php(22): view('signup')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->signup()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-23 06:06:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "base_template.php"
+[Method: GET, Route: signup]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('base_template.php')
+ 2 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('base_template', [], true)
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('signup', [], true)
+ 4 APPPATH\Controllers\Home.php(22): view('signup')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->signup()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-23 06:07:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "base_template.php"
+[Method: GET, Route: signup]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('base_template.php')
+ 2 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('base_template', [], true)
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('signup', [], true)
+ 4 APPPATH\Controllers\Home.php(22): view('signup')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->signup()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-23 06:08:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "base_template.php"
+[Method: GET, Route: signup]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('base_template.php')
+ 2 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('base_template', [], true)
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('signup', [], true)
+ 4 APPPATH\Controllers\Home.php(22): view('signup')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->signup()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-23 06:09:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "base_template.php"
+[Method: GET, Route: signup]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('base_template.php')
+ 2 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('base_template', [], true)
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('signup', [], true)
+ 4 APPPATH\Controllers\Home.php(22): view('signup')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->signup()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')
+CRITICAL - 2024-04-23 07:28:55 --> Error: Call to undefined function getPath()
+[Method: GET, Route: signup]
+in APPPATH\Views\base_template.php on line 29.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('base_template', [], true)
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('signup', [], true)
+ 5 APPPATH\Controllers\Home.php(22): view('signup')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->signup()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\cjkir\\OneDrive\\Desktop\\Fan 2024\\codeigniter4-framework-9b2cd73\\public\\index.php')

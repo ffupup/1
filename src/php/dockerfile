@@ -1,1 +1,32 @@
+# 用8.2
 FROM php:8.2-fpm
+
+# Step 2: 环境和拓展
+RUN apt-get update && apt-get install -y \
+    libzip-dev \
+    unzip \
+    libpng-dev \
+    libjpeg-dev \
+    libfreetype6-dev \
+    libonig-dev \
+    libxml2-dev \
+    pkg-config \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install -j$(nproc) \
+    gd \
+    pdo_mysql \
+    mysqli \
+    && pecl install redis igbinary \
+    && docker-php-ext-enable redis igbinary \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Step 3: 复制 source code (optional, this can also be mounted as a volume via docker-compose)
+workdir /var/www/html
+COPY . /var/www/html
+
+# Step 5: Expose 默认 PHP-FPM port
+EXPOSE 9000
+
+
+

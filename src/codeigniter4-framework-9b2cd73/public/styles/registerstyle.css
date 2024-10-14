@@ -1,0 +1,79 @@
+/* additional styling for the register page */
+/* We can copy a lot of the formatting from the registration page's CSS information */
+/* Obviously, they will need to be renamed! */
+
+/* Registration box/window */
+.register-box{
+    max-width:500px; /* stop it from crossing the whole screen */
+    margin: 100px auto; /* ensure it does not touch the top bar and the navbar */
+    padding:15px; /* padding for the loginbox */
+    border-radius: 15px; /* radius of black border (color selected below) */
+    border-color: solid black;
+    background-color: white; /* white background on the box */
+    /* This can be changed later */
+
+}
+
+/* Additional requirements for the registration box */
+.register-box h2{
+    margin-bottom: 25px; /* margin from the bottom of the box */
+    text-align: center; /* center the word on the box */
+    color:black; /* text colour of the word Register*/
+
+}
+
+/* Login box form */
+.register-box form{
+    text-align: center; /* centre the text */
+}
+
+/* labels for the login box */
+.register-box form label{
+    display: block;
+    margin-bottom: -15px; /* make the text closer to the boxes */
+    color:darkslategray; /* colour of the words username and password + confirm password */
+
+}
+
+.register-box form input[type="username"],
+.register-box form input[type="password"],
+.register-box form input[type="password-confirm"] {
+    width: 100%; /* use the full width */
+    box-sizing: border-box;
+    padding: 10px; /* choose the height of the text boxes */
+    border: 1.5px solid rgb(73, 71, 71); /* add a darker border */
+    border-radius: 5px; /* nice round edges */
+    margin-bottom: 20px;
+
+}
+
+.register-box form input[type="register"]{
+    width:50%; /* make this half the width of the boxes above it */
+    padding:10px; /* match the other box */
+    background-color: dodgerblue; /* match the same colour as the register button! */
+    color: white; /* Same as the register again */
+    border: 1.5px solid black; /* keep consistent */
+    border-radius: 5px; /* match the other box - having trouble making this box taller 
+    without making it too big and not sit centred on the register form */
+    text-align: center;
+    /* can add a radius if it appears too sharp */
+    
+}
+
+.additional-register{ /* for the google form or forgot password section */
+    text-align: center; /* To make it look better, keep the text in the centre */
+    margin-top:25px; /* keep consistent */
+
+}
+
+.additional-register a{
+    text-decoration: none; /* keep this text and do not underline it */
+    color:blue; /* should pop nicely, if not use black */
+    /* maybe add a margin if needed */
+
+}
+
+.spacer{
+    color:white; /* use white so you cannot see it to help separate the box */
+    margin:0 5px;
+}
