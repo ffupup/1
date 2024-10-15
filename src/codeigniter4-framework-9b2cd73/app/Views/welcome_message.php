@@ -119,7 +119,7 @@
         <script src="scripts.js"></script>
       </body>
       <footer>
-        &copy; 2024 My Website. Created by *INSERT NAME*. <!-- Change this to be whatever looks best, good to just have something basic for now-->
+        &copy; 2024 My Website. Created by *Fan Yang*. <!-- Change this to be whatever looks best, good to just have something basic for now-->
       </footer>
 
 
