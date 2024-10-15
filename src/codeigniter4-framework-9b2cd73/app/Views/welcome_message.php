@@ -109,9 +109,9 @@
                 <a href="codeigniter4-framework-9b2cd73\app\Views\index.php" class="home">Home</a><!--Call the home button using the class created before-->
             </div>
             <div>
-                <a href="login.php" class="codeigniter4-framework-9b2cd73\app\Views\login">Login</a> |<!--This will leave a | in red between the buttons, this will stay for now as
+                <a href="codeigniter4-framework-9b2cd73\app\Views\login.php" class="login">Login</a> |<!--This will leave a | in red between the buttons, this will stay for now as
                 it is good for testing and visual purposes-->
-                <a href="signup.php" class="codeigniter4-framework-9b2cd73\app\Views\signup">Register</a>
+                <a href="codeigniter4-framework-9b2cd73\app\Views\signup.php" class="signup">Register</a>
             </div>
                 
         </nav>
