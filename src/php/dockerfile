@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y \
     gd \
     pdo_mysql \
     mysqli \
+    intl \
     && pecl install redis igbinary \
     && docker-php-ext-enable redis igbinary \
     && apt-get clean \
@@ -27,6 +28,7 @@ COPY . /var/www/html
 
 # Step 5: Expose 默认 PHP-FPM port
 EXPOSE 9000
+
 
 
 
